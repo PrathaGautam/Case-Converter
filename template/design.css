@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after
+{
+box-sizing: border-box;
+}
+
+
+* {
+margin:0;
+padding:0;
+
+}
+
+.outer_box
+{
+
+font-size: 1rem;
+background-color:pink;
+margin : 120;
+padding: 30px;
+width: 1500px;
+height: 700px;
+border: 5px double black;
+position: relative; /** for text box **/
+
+
+
+}
+
+.text_box
+{
+position: absolute;
+background-color: brown;
+border : 2px solid black;
+width: 1390px;
+height: 400px;
+top:50px;
+left:50px;
+
+}
+
+.enter_text
+{
+padding: 15px;
+font-size: 25px;
+font-family : Roboto, Arial;
+}
+
+/* changes the color of h1 only when the maximum width is 1000px or less */
+@media (max-width: 1000px)
+{
+h1{
+color : red;
+font-size: 0.8rem;
+}
+}
